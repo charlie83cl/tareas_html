@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>FORMULARIO DE CARLOS</title>
+</head>
+<body>
+<fieldset>MIS DATOS PERSONALES<br><br>
+
+   <form action="#" method="POST" enctype="text/plain" autocomplete="on" name="form_contacto" style="width: 50%;">
+    <!--usar input no imput para que se agregue la barra de escritura-->
+    <label for="nombre"><b>Nombre:</b><br></label>
+    <input type="text" id="nombre" name="nombre"><br>
+    <label for="apellido"><b>Apellido:</b><br></label>
+    <input type="text" id="apellido" name="apellido"><br>
+    <label for="email"><b>Email:</b><br></label>
+    <input type="text" id="email" name="email"><br>
+    <label for="contrasena"><b>Contraseña:</b><br></label>
+    <input type="text" id="contrasena" name="contrasena"><br>
+    <label for="confirmar"><b>Confirmar:</b><br></label>
+    <input type="text" id="confirmar" name="confirmar"><br>
+    
+    <!--aqui se usa date-->
+    <label for="cumpleano"><b>Cumpleaños:</b><br></label>
+    <input type="date" name="cumpleano" id="cumpleano" min="1900-01-01"><br><br>
+    
+    <!--seleccion de genero-->
+    <input type="radio" name="genero" id="hombre" value="hombre" checked>
+    <label for="hombre">HOMBRE</label>
+    <input type="radio" name="genero" id="mujer" value="mujer">
+    <label for="mujer">MUJER</label>
+    <input type="radio" name="genero" id="otro" value="otro">
+    <label for="otro">OTRO</label>
+    <br><br>
+
+    <!--aca se debe usar textarea para que se abra el cuadro de escritura grande darle rows y style-->
+    <label for="descripcion">DESCRIPCION SOBRE MI</label><br><br>
+    <textarea name="descripcion" id="descripcion"  rows="4" style="width: 50%;"> </textarea> <br><br>
+
+    <label for="lenguaje">LENGUAJE FAVORITO</label><br><br>
+    <select name="lenguaje" id="lenguaje" size="10" multiple>
+        <option value="JAVA">JAVA</option>
+        <option value="PHP">PHP</option>
+        <option value="HTML">HTML</option>
+        <option value="PYTHON">PYTHON</option>
+        <option value="C++">C++</option></select>
+        <br><br>
+
+ <!--este es un boton de envio que no funciona para nada pero figura-->
+    <input type="button" onclick="alert('Hola mundo!!!')" value="Enviar">
+</form>
+</fieldset>
+</body>
